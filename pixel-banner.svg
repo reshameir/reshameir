@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 160" width="480" height="160" shape-rendering="crispEdges" role="img" aria-label="Pixel art kamera dan laptop dengan kode yang diketik">
+  <style>
+    .blink { animation: blink 1s steps(1) infinite; }
+    .twinkle { animation: twinkle 2s steps(1) infinite; }
+    .twinkle.b { animation-delay: .7s; }
+    .twinkle.c { animation-delay: 1.3s; }
+    .type1 { animation: type1 4s steps(6) infinite; }
+    .type2 { animation: type2 4s steps(9) infinite; }
+    .type3 { animation: type3 4s steps(4) infinite; }
+    .heart { animation: float 3s steps(6) infinite; }
+    @keyframes blink { 0%,49% { opacity: 1 } 50%,100% { opacity: 0 } }
+    @keyframes twinkle { 0%,49% { opacity: 1 } 50%,100% { opacity: .2 } }
+    @keyframes type1 { 0% { width: 0 } 30%,100% { width: 6px } }
+    @keyframes type2 { 0%,30% { width: 0 } 60%,100% { width: 9px } }
+    @keyframes type3 { 0%,60% { width: 0 } 85%,100% { width: 4px } }
+    @keyframes float {
+      0% { transform: translateY(0); opacity: 0 }
+      20% { opacity: 1 }
+      100% { transform: translateY(-6px); opacity: 0 }
+    }
+  </style>
+
+  <!-- 1 unit = 8px, jadi semua koordinat di bawah dalam satuan "piksel" -->
+  <g transform="scale(8)">
+    <!-- panel latar (gelap supaya aman di mode terang & gelap) -->
+    <rect width="60" height="20" fill="#1e1e2e"/>
+    <rect y="17" width="60" height="3" fill="#313244"/>
+
+    <!-- bintang -->
+    <rect class="twinkle" x="3" y="2" width="1" height="1" fill="#f9e2af"/>
+    <rect class="twinkle b" x="27" y="3" width="1" height="1" fill="#cdd6f4"/>
+    <rect class="twinkle c" x="55" y="2" width="1" height="1" fill="#f9e2af"/>
+    <rect class="twinkle" x="30" y="12" width="1" height="1" fill="#cdd6f4"/>
+    <rect class="twinkle b" x="57" y="9" width="1" height="1" fill="#f9e2af"/>
+
+    <!-- kamera (content creator) -->
+    <rect x="6" y="7" width="12" height="8" fill="#cdd6f4"/>
+    <rect x="8" y="5" width="4" height="2" fill="#cdd6f4"/>
+    <rect x="10" y="9" width="4" height="4" fill="#313244"/>
+    <rect x="11" y="10" width="2" height="2" fill="#89b4fa"/>
+    <rect class="blink" x="16" y="8" width="1" height="1" fill="#f38ba8"/>
+
+    <!-- hati melayang -->
+    <g class="heart" fill="#f38ba8">
+      <rect x="22" y="9" width="1" height="1"/><rect x="24" y="9" width="1" height="1"/>
+      <rect x="21" y="10" width="5" height="1"/>
+      <rect x="22" y="11" width="3" height="1"/>
+      <rect x="23" y="12" width="1" height="1"/>
+    </g>
+
+    <!-- laptop -->
+    <rect x="34" y="5" width="16" height="10" fill="#45475a"/>
+    <rect x="35" y="6" width="14" height="8" fill="#11111b"/>
+    <rect x="32" y="15" width="20" height="2" fill="#cdd6f4"/>
+
+    <!-- kode yang "diketik" -->
+    <rect class="type1" x="36" y="7" width="6" height="1" fill="#a6e3a1"/>
+    <rect class="type2" x="36" y="9" width="9" height="1" fill="#89b4fa"/>
+    <rect class="type3" x="36" y="11" width="4" height="1" fill="#f9e2af"/>
+    <rect class="blink" x="41" y="11" width="1" height="1" fill="#cdd6f4"/>
+  </g>
+</svg>

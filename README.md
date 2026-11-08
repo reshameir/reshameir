@@ -20,7 +20,7 @@
 ```yaml
 identity: "Resha Meiranadi Caturkusuma"
 role: "Laboran & Asisten Dosen @ Universitas Dian Nuswantoro Kediri"
-education: "Master's Degree (S2) Student"
+education: "Bachellor's Degree (S1) Student"
 passions: ["Data Science", "Web Development", "Content Creation"]
 location: "Kediri, Indonesia 🇮🇩"
 bio: "Tempat seru-seruan buat eksplorasi coding dan ide-ide baru."
@@ -38,8 +38,14 @@ bio: "Tempat seru-seruan buat eksplorasi coding dan ide-ide baru."
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=html,css,js,py,git,vscode&theme=dark" alt="Tech Stack Icons" />
+    <img src="https://skillicons.dev/icons?i=html,css,js,ts,py,nextjs,laravel,git,vscode&theme=dark" alt="Tech Stack Icons" />
   </a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Google_Antigravity-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Google Antigravity" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/Claude-D97706?style=for-the-badge&logo=claude&logoColor=white" alt="Claude" />
 </p>
 
 <p align="center">
